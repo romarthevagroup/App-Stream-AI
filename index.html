@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Prospecting SH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Prospecting SH</h1>
+        <p>Enter a LinkedIn URL, Email, or Phone to search.</p>
+        <div class="search-box">
+            <input type="text" id="userInput" placeholder="https://linkedin.com/in/username...">
+            <button onclick="startSearch()">Process</button>
+        </div>
+        <div id="results" class="hidden">
+            <div class="card">
+                <h2 id="resName">Name</h2>
+                <p><strong>Title:</strong> <span id="resTitle"></span></p>
+                <p><strong>Company:</strong> <span id="resCompany"></span></p>
+                <p><strong>Email:</strong> <span id="resEmail"></span></p>
+                <div id="aiSummary" class="summary"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
